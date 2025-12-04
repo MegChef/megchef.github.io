@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Project 1 — REST API Documentation | Project 1 Docs</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="">
+    <meta name="generator" content="Hugo 0.148.2">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+
+    
+
+
+    
+      
+
+    
+
+    
+    
+      <link href="/docs/project1/index.xml" rel="alternate" type="application/rss+xml" title="Project 1 Docs" />
+      <link href="/docs/project1/index.xml" rel="feed" type="application/rss+xml" title="Project 1 Docs" />
+      
+    
+
+    
+      <link rel="canonical" href="//localhost:1313/docs/project1/">
+    
+
+    
+    
+    <meta property="og:url" content="//localhost:1313/docs/project1/">
+  <meta property="og:site_name" content="Project 1 Docs">
+  <meta property="og:title" content="Project 1 — REST API Documentation">
+  <meta property="og:description" content="Project 1 – REST API Documentation Welcome to the full documentation for my REST API backend project.
+Use the sections below to browse:
+📘 Table of Contents REST API Overview Database Structure API Examples Security Features This project demonstrates:
+Full authentication (JWT) Role-based access control (RBAC) Secure password hashing Friend request &amp; social features Multiple CRUD endpoints">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Project 1 — REST API Documentation">
+  <meta itemprop="description" content="Project 1 – REST API Documentation Welcome to the full documentation for my REST API backend project.
+Use the sections below to browse:
+📘 Table of Contents REST API Overview Database Structure API Examples Security Features This project demonstrates:
+Full authentication (JWT) Role-based access control (RBAC) Secure password hashing Friend request &amp; social features Multiple CRUD endpoints">
+  <meta itemprop="datePublished" content="2025-12-04T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-12-04T00:00:00+00:00">
+  <meta itemprop="wordCount" content="57">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Project 1 — REST API Documentation">
+  <meta name="twitter:description" content="Project 1 – REST API Documentation Welcome to the full documentation for my REST API backend project.
+Use the sections below to browse:
+📘 Table of Contents REST API Overview Database Structure API Examples Security Features This project demonstrates:
+Full authentication (JWT) Role-based access control (RBAC) Secure password hashing Friend request &amp; social features Multiple CRUD endpoints">
+
+	
+  </head><body class="ma0 avenir bg-near-white development">
+
+    
+
+  <header>
+    <div class="pb3-m pb6-l bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        Project 1 Docs
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/docs/project1" title="Docs page">
+              Docs
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/portfolio/" title="Portfolio page">
+              Portfolio
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv3 ph3 ph4-ns">
+        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
+          Project 1 — REST API Documentation
+        </h1>
+        
+      </div>
+    </div>
+  </header>
+
+
+    <main class="pb7" role="main">
+      
+  <article class="pa3 pa4-ns nested-copy-line-height">
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links mid-gray"><h1 id="project-1--rest-api-documentation">Project 1 – REST API Documentation</h1>
+<p>Welcome to the full documentation for my REST API backend project.<br>
+Use the sections below to browse:</p>
+<h2 id="-table-of-contents">📘 Table of Contents</h2>
+<ul>
+<li><a href="project1">REST API Overview</a></li>
+<li><a href="database.md">Database Structure</a></li>
+<li><a href="api-examples.md">API Examples</a></li>
+<li><a href="security.md">Security Features</a></li>
+</ul>
+<hr>
+<p>This project demonstrates:</p>
+<ul>
+<li>Full authentication (JWT)</li>
+<li>Role-based access control (RBAC)</li>
+<li>Secure password hashing</li>
+<li>Friend request &amp; social features</li>
+<li>Multiple CRUD endpoints</li>
+</ul>
+</section>
+    <section class="flex-ns mt5 flex-wrap justify-around">
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Project 1 — REST API Documentation</span>
+    <h1 class="f3 near-black">
+      <a href="/docs/project1/api-overview/" class="link black dim">
+        REST API Overview
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <h2 id="rest-apis">REST APIs</h2>
+<p>A REST API (Representational State Transfer Application Programming Interface) is an architectural style for designing networked applications. It&rsquo;s a set of principles and constraints that guide how web services communicate over the internet, primarily using the HTTP protocol.</p>
+<h2 id="api-social-platform-user-management">API: Social Platform User Management</h2>
+<h3 id="why-i-built-this-rest-api">Why I Built This REST API</h3>
+<p>I built this REST API because I wanted to implement a medium build API that also included security features. This API could have endpoints for user management, authentication, user profile management, and social interactions (like friendships). This scenario provides a good mixture of security (login, profile management), relationship (friends), and CRUD operations.</p>
+    </div>
+    <a href="/docs/project1/api-overview/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Project 1 — REST API Documentation</span>
+    <h1 class="f3 near-black">
+      <a href="/docs/project1/database/" class="link black dim">
+        Database Structure
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <h2 id="mysql--sqlite-database-usage">MySQL / SQLite Database Usage</h2>
+<p>The project uses four tables:</p>
+<ul>
+<li><strong>users</strong></li>
+<li><strong>revokedTokens</strong></li>
+<li><strong>friendships</strong></li>
+<li><strong>friendRequests</strong></li>
+</ul>
+<hr>
+<h2 id="table-users">Table: users</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Column</th>
+          <th>Type</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>id</td>
+          <td>INTEGER PRIMARY KEY AUTOINCREMENT</td>
+          <td>Unique user ID</td>
+      </tr>
+      <tr>
+          <td>username</td>
+          <td>TEXT UNIQUE NOT NULL</td>
+          <td>Username</td>
+      </tr>
+      <tr>
+          <td>password</td>
+          <td>TEXT NOT NULL</td>
+          <td>Hashed password</td>
+      </tr>
+      <tr>
+          <td>role</td>
+          <td>TEXT DEFAULT &lsquo;user&rsquo;</td>
+          <td>user/admin</td>
+      </tr>
+      <tr>
+          <td>createdAt</td>
+          <td>DATETIME</td>
+          <td>Creation time</td>
+      </tr>
+      <tr>
+          <td>updatedAt</td>
+          <td>DATETIME</td>
+          <td>Last update</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="apis-using-this-table">APIs using this table</h3>
+<ul>
+<li>POST /api/auth/register</li>
+<li>POST /api/auth/login</li>
+<li>GET /api/users</li>
+<li>POST /api/users/me/password</li>
+</ul>
+<hr>
+<h2 id="table-revokedtokens">Table: revokedTokens</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Column</th>
+          <th>Type</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>id</td>
+          <td>INTEGER PRIMARY KEY</td>
+          <td>Unique ID</td>
+      </tr>
+      <tr>
+          <td>token</td>
+          <td>TEXT</td>
+          <td>JWT token string</td>
+      </tr>
+      <tr>
+          <td>revokedAt</td>
+          <td>DATETIME</td>
+          <td>Time of revocation</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="apis-using-this-table-1">APIs using this table</h3>
+<ul>
+<li>POST /api/auth/logout</li>
+<li>Middleware token validation</li>
+</ul>
+<hr>
+<h2 id="table-friendships">Table: friendships</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Column</th>
+          <th>Type</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>id</td>
+          <td>INTEGER PRIMARY KEY</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>userId</td>
+          <td>INT</td>
+          <td>First user</td>
+      </tr>
+      <tr>
+          <td>friendId</td>
+          <td>INT</td>
+          <td>Second user</td>
+      </tr>
+      <tr>
+          <td>createdAt</td>
+          <td>DATETIME</td>
+          <td>Time created</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="apis">APIs</h3>
+<ul>
+<li>GET /api/friends</li>
+<li>DELETE /api/friends/{id}</li>
+</ul>
+<hr>
+<h2 id="table-friendrequests">Table: friendRequests</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Column</th>
+          <th>Type</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>id</td>
+          <td>INTEGER PRIMARY KEY</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>senderId</td>
+          <td>INT</td>
+          <td>Sender</td>
+      </tr>
+      <tr>
+          <td>receiverId</td>
+          <td>INT</td>
+          <td>Receiver</td>
+      </tr>
+      <tr>
+          <td>status</td>
+          <td>TEXT</td>
+          <td>pending/accepted/rejected</td>
+      </tr>
+      <tr>
+          <td>createdAt</td>
+          <td>DATETIME</td>
+          <td>Timestamp</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="apis-1">APIs</h3>
+<ul>
+<li>POST /api/friendRequests</li>
+<li>GET /api/friendRequests</li>
+<li>PUT /api/friendRequests/{id}</li>
+</ul>
+    </div>
+    <a href="/docs/project1/database/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Project 1 — REST API Documentation</span>
+    <h1 class="f3 near-black">
+      <a href="/docs/project1/security/" class="link black dim">
+        Security
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <h2 id="security-features-of-rest-apis">Security Features of REST APIs</h2>
+<h2 id="security-mechanisms-implemented">Security Mechanisms Implemented</h2>
+<p>My REST API implements multiple layers of security to protect user data, authentication tokens, and authorization logic.</p>
+<p>The main mechanisms include JWT-based authentication, role-based access control, password hashing, token revocation, input validation, and error handling.</p>
+<p>Each of these features ensures both user privacy and system integrity.</p>
+<h2 id="1-json-web-token-jwt-authentication">1. JSON Web Token (JWT) Authentication</h2>
+<ul>
+<li>
+<p>Purpose:</p>
+<ul>
+<li>JWTs are used to verify that a client is authenticated before accessing protected endpoints</li>
+<li>After successful login, the server issues a JWT signed using a secret key. This token is sent in the Authorization header for subsequent requests</li>
+</ul>
+</li>
+<li>
+<p>Implementation Details:</p>
+    </div>
+    <a href="/docs/project1/security/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Project 1 — REST API Documentation</span>
+    <h1 class="f3 near-black">
+      <a href="/docs/project1/api-examples/" class="link black dim">
+        REST API Examples (With Screenshots)
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <h1 id="rest-api-examples">REST API Examples</h1>
+<p>Below are real executions of the endpoints using cURL along with screenshots.</p>
+<hr>
+<h2 id="register-user">Register User</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -X POST http://localhost:3000/api/users/register <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#34;Content-Type: application/json&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -d <span style="color:#e6db74">&#39;{&#34;username&#34;:&#34;root&#34;,&#34;password&#34;:&#34;sillypassword&#34;}&#39;</span>
+</span></span></code></pre></div><h2 id="login">Login</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -X POST http://localhost:3000/api/auth/login <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#34;Content-Type: application/json&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -d <span style="color:#e6db74">&#39;{&#34;username&#34;:&#34;alice&#34;,&#34;password&#34;:&#34;password123&#34;}&#39;</span>
+</span></span></code></pre></div><h2 id="send-friend-request">Send friend request</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -X POST http://localhost:3000/api/friends/request/OTHER_USER_ID <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#34;Authorization: Bearer YOUR_JWT_TOKEN&#34;</span>
+</span></span></code></pre></div><h2 id="view-friend-request">View friend request</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -X GET http://localhost:3000/api/friends/requests <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#34;Authorization: Bearer &lt;bob_token&gt;&#34;</span>
+</span></span></code></pre></div><h2 id="accept-friend-request-as-bob">Accept friend request as bob</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -X POST http://localhost:3000/api/friends/accept/REQUEST_ID <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#34;Authorization: Bearer &lt;bob_token&gt;&#34;</span>
+</span></span></code></pre></div><h2 id="view-friends">View friends</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -X GET http://localhost:3000/api/friends <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#34;Authorization: Bearer &lt;bob_token&gt;&#34;</span>
+</span></span></code></pre></div><h2 id="remove-a-friend">Remove a friend</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -X DELETE http://localhost:3000/api/friends/USER_ID <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#34;Authorization: Bearer &lt;alice_token&gt;&#34;</span>
+</span></span></code></pre></div><h2 id="reject-friend-request">Reject friend request</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -X POST http://localhost:3000/api/friends/reject/REQUEST_ID <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#34;Authorization: Bearer &lt;bob_TOKEN&gt;&#34;</span>
+</span></span></code></pre></div><h2 id="delete-own-profile">Delete own profile</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -X DELETE http://localhost:3000/api/users/me <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#34;Authorization: Bearer &lt;USER_TOKEN&gt;&#34;</span>
+</span></span></code></pre></div><h2 id="change-password">Change password</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -X POST http://localhost:3000/api/users/me/password <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#34;Authorization: Bearer &lt;USER_TOKEN&gt;&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#34;Content-Type: application/json&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -d <span style="color:#e6db74">&#39;{&#34;password&#34;:&#34;newpassword123&#34;}&#39;</span>
+</span></span></code></pre></div><h2 id="user-logs-out">User logs out</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -X POST http://localhost:3000/api/auth/logout <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#34;Authorization: Bearer &lt;USER_TOKEN&gt;&#34;</span>
+</span></span></code></pre></div><h2 id="view-users-admin-only">View users (admin only):</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -X GET http://localhost:3000/api/users <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#34;Authorization: Bearer YOUR_TOKEN&#34;</span>
+</span></span></code></pre></div><h2 id="admin-deletes-user">Admin deletes user</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -X DELETE http://localhost:3000/api/users/USER_ID <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#34;Authorization: Bearer &lt;ADMIN_TOKEN&gt;&#34;</span>
+</span></span></code></pre></div>
+    </div>
+    <a href="/docs/project1/api-examples/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+    </section>
+    </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="//localhost:1313/" >
+    &copy;  Project 1 Docs 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
